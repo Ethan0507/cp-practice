@@ -1,0 +1,10 @@
+ip = input().split(" ")
+n, k = int(ip[0]), int(ip[1])
+scores = [int(i) for i in input().split(" ")]
+count = 0
+for score in scores:
+    if score > 0 and score >= scores[k - 1]:
+        count += 1
+    else:
+        break
+print(count)

@@ -1,0 +1,7 @@
+n = int(input())
+count = 0
+for i in range(n):
+    curr_state = [int(c) for c in input().split(" ")]
+    if sum(curr_state) > 1:
+        count += 1
+print(count)

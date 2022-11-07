@@ -1,0 +1,2 @@
+dims = input().split(" ")
+print(int(dims[0]) * int(dims[1]) // 2)
